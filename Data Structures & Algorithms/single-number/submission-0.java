@@ -1,0 +1,9 @@
+class Solution {
+    public int singleNumber(int[] nums) {
+        int temp = 0;
+        for(int x : nums){
+            temp ^= x;
+        }
+        return temp;
+    }
+}
